@@ -1,0 +1,265 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+--header-height: 3.5rem;
+
+/*========== Colores ==========*/
+--back-ground-color-main:#f9f5e0;
+--h1-main-title: #8acdd7;
+--color-btn-main:#ff90bc;
+--color-btn-both:#91d0d8;
+--color-font-mamarrachitas:#e175a1;
+--color-font-mamarrachitos:#91d0d8;
+--color-table:#8acdd7;
+--color-font-table:#e175a1;
+
+/*========== Font y Tipografia ==========*/
+.5rem = 8px | 1rem = 16px ...
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--back-ground-color-main);
+}
+
+.box{
+    position: relative;
+    width: 390px;
+    height: 490px;
+    background: var(--color-btn-main);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 390px;
+    height: 490px;
+    background:linear-gradient(30deg, transparent, transparent, #52e8ff, #31e7ff, #00ddff);
+    transform-origin:bottom right;
+    animation: animate 6s linear infinite;
+    z-index: 1;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 390px;
+    height: 490px;
+    background:linear-gradient(30deg, transparent, transparent, #52e8ff, #31e7ff, #00ddff);
+    transform-origin:bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+    z-index: 1;
+}
+
+.box__line{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+
+.box__line::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 390px;
+    height: 490px;
+    background:linear-gradient(30deg, transparent, transparent, #ff6b9a, #ff3787, #ff0062);
+    transform-origin:bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+    z-index: 1;
+}
+
+.box__line::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 390px;
+    height: 490px;
+    background:linear-gradient(30deg, transparent, transparent, #ff6b9a, #ff3787, #ff0062);
+    transform-origin:bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+    z-index: 1;
+}
+@keyframes animate{
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+form{
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background-color: #e0b8c8;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;    
+}
+
+h2{
+    color:#ff0062;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: .1rem;
+    /* margin: .5rem 0 .7rem 0; */
+}
+
+.input__box {
+    position: relative;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.input__box input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: #ff0062;
+    font-size: 1em;
+    letter-spacing: .05em;
+    transition: .5s;
+    z-index: 10;
+}
+
+.input__box span{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #009bd3;
+    font-weight: bold;
+    pointer-events: none;
+    letter-spacing: .05em;
+    transition: .5s;
+}
+
+.input__box input:valid ~ span,
+.input__box input:focus ~ span{
+    color: #ff0062;
+    font-size: .75em;
+    transform: translateX(-10px) translateY(-35px);
+}
+
+.input__box i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #ff0062;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.rBrn{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.lbl{
+    font-size: 16px;
+    color: #009bd3;
+    font-weight: bolder;
+    margin-left: .6em;
+    margin-top: .6em;
+}
+
+.radio__wrapper{
+    margin: 20px;
+}
+
+input[type="radio"]{
+    opacity: 0;
+}
+
+input[type="radio"] + label{
+    position: relative;
+    color: #009bd3;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="radio"] + label::before{
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    left: -24px;
+    top: 0;
+    border: 1px solid #006488;
+    border-radius: 50%;
+}
+
+input[type="radio"] + label::after{
+    position: absolute;
+    content: ''; 
+    width: 12px;
+    height: 12px;
+    left: -20px;
+    top: 4px;
+    border-radius: 50%;
+}
+
+input[type="radio"]:focus + label::before{
+    box-shadow: 0 0 0 2px #ff0062d8;
+}
+
+input[type="radio"]:checked + label::after{
+    background-color: #ff0062;
+}
+
+input[type="submit"]{
+    border: none;
+    outline: none;
+    background:#ff0062d8;
+    padding: 11px 25px;
+    font-size: .9em;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: .6em;
+}
+
+input[type="submit"]:active{
+    opacity: .8;
+
+}

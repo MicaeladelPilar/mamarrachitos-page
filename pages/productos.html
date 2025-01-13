@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!----------------- ICONS ----------------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+     
+     <!-------------------CSS------------------->
+     <link rel="stylesheet" href="/styles/style_navbar.css">
+     <link rel="stylesheet" href="/styles/style_index.css">
+     <link rel="stylesheet" href="/styles/style_footer.css">
+     <link rel="stylesheet" href="/styles/style_productos.css">
+ 
+     <link rel="shortcut icon" href="/imagenes/mamarrachitos.jpg" type="image/x-icon">
+
+    <title>Productos</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="/index.html" class="nav__logo">Mamarrachitos</a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="/pages/productos.html" class="nav__link">Productos</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="/pages/preguntas.html" class="nav__link">Preguntas</a>
+                 </li>
+
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <div class="nav__actions">
+              <!-- Search button -->
+              <i class="ri-search-line nav__search" id="search-btn"></i>
+
+              <!-- Login button -->
+              <i class="ri-user-line nav__login" id="login-btn"></i>
+
+              <!-- Toggle button -->
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"></i>
+              </div>
+           </div>
+        </nav>
+     </header>
+
+     <!--------------------- SEARCH --------------------->
+     <div class="search" id="search">
+        <form action="" class="search__form">
+           <i class="ri-search-line search__icon"></i>
+           <input type="search" placeholder="Buscar ..." class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+     </div>
+
+     <!---------------------- LOGIN --------------------->
+     <div class="login" id="login">
+        <form action="" class="login__form">
+           <h2 class="login__title">Log In</h2>
+           
+           <div class="login__group">
+              <div>
+                 <label for="email" class="login__label">Email</label>
+                 <input type="email" placeholder="Email" id="email" class="login__input">
+              </div>
+              
+              <div>
+                 <label for="password" class="login__label">Password</label>
+                 <input type="password" placeholder="Contraseña" id="password" class="login__input">
+              </div>
+           </div>
+
+           <div>
+              <p class="login__signup">
+                 No tienes cuenta? <a href="/pages/sign_up.html">Sign up</a>
+              </p>
+  
+              <a href="#" class="login__forgot">
+                 Olvidaste tu contraseña
+              </a>
+  
+              <button type="submit" class="login__button">Log In</button>
+           </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+     </div>
+        <!-----------------End Header------------------>
+    <main class="base">
+      <h1 class="main_title">Productos</h1>
+    <section class="nav_productos">
+        <ul class="productos_items">
+            <li><a href="#">Niñas</a></li>
+            <li><a href="#">Niños</a></li>
+        </ul>
+    </section>
+    <section class="container">
+      <h2 class="container__title">Selecciona el Producto</h2>
+
+      <div class="card__container">
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/IMG-20240317-WA0110.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 1</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/IMG-20240317-WA0110.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 1</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/IMG-20240505-WA0128.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 2</h3>
+                  <span class="card__price">$119</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/IMG-20240505-WA0128.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 2</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     </p>
+                     <span class="modal__price">$119</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+             <div class="card__product">
+                <img src="/imagenes/IMG-20240505-WA0129.jpg" alt="image" class="card__img">
+ 
+                <div>
+                   <h3 class="card__name">Body 3</h3>
+                   <span class="card__price">$59</span>
+                </div>
+             </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/IMG-20240505-WA0129.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 3</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     </p>
+                     <span class="modal__price">$59</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+             <div class="card__product">
+                <img src="/imagenes/IMG-20240707-WA0250.jpg" alt="image" class="card__img">
+ 
+                <div>
+                   <h3 class="card__name">Body 4</h3>
+                   <span class="card__price">$39</span>
+                </div>
+             </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/IMG-20240707-WA0250.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 4</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     </p>
+                     <span class="modal__price">$39</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+             <div class="card__product">
+                <img src="/imagenes/IMG-20240713-WA0146.jpg" alt="image" class="card__img">
+ 
+                <div>
+                   <h3 class="card__name">Body 5</h3>
+                   <span class="card__price">$799</span>
+                </div>
+             </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/IMG-20240713-WA0146.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 5</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$799</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+             <div class="card__product">
+                <img src="/imagenes/IMG-20240723-WA0036.jpg" alt="image" class="card__img">
+ 
+                <div>
+                   <h3 class="card__name">Body 6</h3>
+                   <span class="card__price">$19</span>
+                </div>
+             </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/IMG-20240723-WA0036.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 6</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     </p>
+                     <span class="modal__price">$19</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/IMG-20240723-WA0039.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 7</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/IMG-20240723-WA0039.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 7</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/IMG-20240804-WA0012.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 8</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/IMG-20240804-WA0012.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 8</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/IMG_20230710_182212_141.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 9</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/IMG_20230710_182212_141.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 9</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/IMG_20240530_122602_016.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 10</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/IMG_20240530_122602_016.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 10</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/Picsart_23-09-12_11-19-09-231.png" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 11</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/Picsart_23-09-12_11-19-09-231.png" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 11</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/Picsart_23-10-11_14-55-16-391.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 12</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/Picsart_23-10-11_14-55-16-391.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 12</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/Picsart_23-10-28_18-28-08-602.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 13</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/Picsart_23-10-28_18-28-08-602.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 13</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/Picsart_23-12-08_23-09-47-730.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 14</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/Picsart_23-12-08_23-09-47-730.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 14</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/Picsart_24-01-12_15-36-21-838.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 15</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/Picsart_24-01-12_15-36-21-838.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 15</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/Picsart_24-01-12_15-42-19-237.png" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 16</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/Picsart_24-01-12_15-42-19-237.png" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 16</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/Picsart_24-07-27_14-46-21-322.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 17</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/Picsart_24-07-27_14-46-21-322.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 17</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/Picsart_24-08-11_16-07-50-557.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 18</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/Picsart_24-08-11_16-07-50-557.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 18</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/Picsart_24-08-11_20-21-33-309.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 19</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/Picsart_24-08-11_20-21-33-309.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 19</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/Picsart_24-08-13_18-05-30-715.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 20</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/Picsart_24-08-13_18-05-30-715.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 20</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <!-- CARD PRODUCT -->
+            <div class="card__product">
+               <img src="/imagenes/Picsart_24-08-11_20-21-33-309.jpg" alt="image" class="card__img">
+
+               <div>
+                  <h3 class="card__name">Body 21</h3>
+                  <span class="card__price">$299</span>
+               </div>
+            </div>
+
+            <!-- POPUP MODAL -->
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+
+                  <img src="/imagenes/Picsart_24-08-11_20-21-33-309.jpg" alt="image" class="modal__img">
+
+                  <div>
+                     <h3 class="modal__name">Body 21</h3>
+                     <p class="modal__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     </p>
+                     <span class="modal__price">$299</span>
+                  </div>
+
+                  <div class="modal__buttons">
+                     <a href="/pages/producto.html"class="modal__button modal__button-ghost">Comprar Ahora</a> 
+                     <button class="modal__button">Añadir al Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </article>
+      </div>
+   </section>
+</main>
+    <!------Footer------>
+
+    <footer class="piePagina">
+
+        <a href="../index.html"><img class="imagenlogofooter" src="/imagenes/mamarrachitos.jpg" alt="Logo Mamarrachitos"></a>
+        
+        <div class="seccion-derecha">
+        <p class="redesSociales">
+            <a href="https://www.instagram.com/mamarrachitos_ok"><i class="redes fi fi-brands-instagram"></i></a>
+        </p>
+        </div>
+  
+        <div class="seccion-izquierda">  
+        <ul>
+            <li class="liPaginasFooter"> <a class="linkFooter" href="../index.html">Inicio</a> </li>
+            <li class="liPaginasFooter"> <a class="linkFooter" href="/pages/productos.html">Productos</a> </li>
+            <li class="liPaginasFooter"> <a class="linkFooter" href="/pages/preguntas.html">Preguntas</a> </li>
+        </ul>
+        </div>
+<!---------------- JS ----------------->
+     <script src="/js/navbar.js"></script> 
+     <script src="/js/productos.js"></script> 
+      </footer> 
+</body>
+</html>

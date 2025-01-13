@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+     <!----------------- ICONS ----------------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
+     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+     
+     <!-------------------CSS------------------->
+     <link rel="stylesheet" href="/styles/style_navbar.css">
+     <link rel="stylesheet" href="/styles/style_index.css">
+     <link rel="stylesheet" href="/styles/style_footer.css">
+     <link rel="stylesheet" href="/styles/style_producto.css">
+ 
+     <link rel="shortcut icon" href="/imagenes/mamarrachitos.jpg" type="image/x-icon">
+     
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="/index.html" class="nav__logo">Mamarrachitos</a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="/pages/productos.html" class="nav__link">Productos</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="/pages/preguntas.html" class="nav__link">Preguntas</a>
+                 </li>
+
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <div class="nav__actions">
+              <!-- Search button -->
+              <i class="ri-search-line nav__search" id="search-btn"></i>
+
+              <!-- Login button -->
+              <i class="ri-user-line nav__login" id="login-btn"></i>
+
+              <!-- Toggle button -->
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"></i>
+              </div>
+           </div>
+        </nav>
+     </header>
+
+     <!--------------------- SEARCH --------------------->
+     <div class="search" id="search">
+        <form action="" class="search__form">
+           <i class="ri-search-line search__icon"></i>
+           <input type="search" placeholder="Buscar ..." class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+     </div>
+
+     <!---------------------- LOGIN --------------------->
+     <div class="login" id="login">
+        <form action="" class="login__form">
+           <h2 class="login__title">Log In</h2>
+           
+           <div class="login__group">
+              <div>
+                 <label for="email" class="login__label">Email</label>
+                 <input type="email" placeholder="Email" id="email" class="login__input">
+              </div>
+              
+              <div>
+                 <label for="password" class="login__label">Password</label>
+                 <input type="password" placeholder="Contraseña" id="password" class="login__input">
+              </div>
+           </div>
+
+           <div>
+              <p class="login__signup">
+                 No tienes cuenta? <a href="/pages/sign_up.html">Sign up</a>
+              </p>
+  
+              <a href="#" class="login__forgot">
+                 Olvidaste tu contraseña
+              </a>
+  
+              <button type="submit" class="login__button">Log In</button>
+           </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+     </div>
+        <!-----------------End Header------------------>
+    
+        <section class="main-wrap">
+            <div class="product">
+                <div class="image-gallery">
+                    <img src="/imagenes/IMG-20240317-WA0110.jpg" id="productImg" alt="imagen">
+                </div>
+                <div class="product-details">
+                    <div class="details">
+                        <h2>Body 1</h2>
+                        <h3>$150.00</h3>
+                        <h4>35% OFF</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quibusdam est illum, unde adipisci neque impedit, enim accusantium incidunt non ipsum, repellat blanditiis. Ullam autem, non quod quo tenetur corrupti.</p>
+                    </div>
+                    <div class="sizes">
+                        <form class="form">
+                            <div class="select-size">
+                                <h3>Size:</h3>
+                                <label for="sm">
+                                    <input type="radio" name="size" id="sm">
+                                    <span>S</span>
+                                </label>
+                                <label for="m">
+                                    <input type="radio" name="size" id="m">
+                                    <span>M</span>
+                                </label>
+                                <label for="lg">
+                                    <input type="radio" name="size" id="lg">
+                                    <span>L</span>
+                                </label>
+                                <label for="xl">
+                                    <input type="radio" name="size" id="xl">
+                                    <span>XL</span>
+                                </label>
+                                <label for="xxl">
+                                    <input type="radio" name="size" id="xxl">
+                                    <span>XXL</span>
+                                </label>
+                            </div>   
+                        </form>
+                    </div>
+                    <div class="colors">
+                        <form class="form">
+                            <div class="select-color">
+                                <h3>Color:</h3>
+                                <label for="red">
+                                    <input type="radio" name="color" id="red">
+                                    <span class="color-1"></span>
+                                </label>
+                                <label for="green">
+                                    <input type="radio" name="color" id="green">
+                                    <span class="color-2"></span>
+                                </label>
+                                <label for="blue">
+                                    <input type="radio" name="color" id="blue">
+                                    <span class="color-3"></span>
+                                </label>
+                                <label for="yellow">
+                                    <input type="radio" name="color" id="yellow">
+                                    <span class="color-4"></span>
+                                </label>
+                            </div>   
+                        </form>
+                    </div>
+                    <div class="quantity">
+                        <div class="select-quantity">
+                            <h3>Quantity:</h3>
+                            <input type="number" name="quantity" value="1">
+                        </div>
+                    </div>
+                    <div class="sub-btn">
+                        <button class="submit">Comprar</button>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+
+        <footer class="piePagina">
+
+            <a href="index.html"><img class="imagenlogofooter" src="/imagenes/mamarrachitos.jpg" alt="Logo Mamarrachitos"></a>
+            
+            <div class="seccion-derecha">
+            <p class="redesSociales">
+                <a href="https://www.instagram.com/mamarrachitos_ok"><i class="redes fi fi-brands-instagram"></i></a>
+            </p>
+            </div>
+      
+            <div class="seccion-izquierda">  
+            <ul>
+                <li class="liPaginasFooter"> <a class="linkFooter" href="index.html">Inicio</a> </li>
+                <li class="liPaginasFooter"> <a class="linkFooter" href="/pages/productos.html">Productos</a> </li>
+                <li class="liPaginasFooter"> <a class="linkFooter" href="/pages/preguntas.html">Preguntas</a> </li>
+            </ul>
+            </div>
+      
+          </footer> 
+    
+        <script src="/js/producto.js"></script>
+        <script src="/js/navbar.js"></script>
+</body>
+</html>

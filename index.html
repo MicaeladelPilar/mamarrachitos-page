@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------------- ICONS ----------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    
+    <!-------------------CSS------------------->
+    <link rel="stylesheet" href="/styles/style_navbar.css">
+    <link rel="stylesheet" href="/styles/style_index.css">
+    <link rel="stylesheet" href="/styles/style_footer.css">
+
+    <link rel="shortcut icon" href="/imagenes/mamarrachitos.jpg" type="image/x-icon">
+    
+    <title>Mamarrachitos</title> 
+    
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="index.html" class="nav__logo">Mamarrachitos</a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="/pages/productos.html" class="nav__link">Productos</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="/pages/preguntas.html" class="nav__link">Preguntas</a>
+                 </li>
+
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <div class="nav__actions">
+              <!-- Search button -->
+              <i class="ri-search-line nav__search" id="search-btn"></i>
+
+              <!-- Login button -->
+              <i class="ri-user-line nav__login" id="login-btn"></i>
+
+              <!-- Toggle button -->
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"></i>
+              </div>
+           </div>
+        </nav>
+     </header>
+
+     <!--------------------- SEARCH --------------------->
+     <div class="search" id="search">
+        <form action="" class="search__form">
+           <i class="ri-search-line search__icon"></i>
+           <input type="search" placeholder="Buscar ..." class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+     </div>
+
+     <!---------------------- LOGIN --------------------->
+     <div class="login" id="login">
+        <form action="" class="login__form">
+           <h2 class="login__title">Log In</h2>
+           
+           <div class="login__group">
+              <div>
+                 <label for="email" class="login__label">Email</label>
+                 <input type="email" placeholder="Email" id="email" class="login__input">
+              </div>
+              
+              <div>
+                 <label for="password" class="login__label">Password</label>
+                 <input type="password" placeholder="Contraseña" id="password" class="login__input">
+              </div>
+           </div>
+
+           <div>
+              <p class="login__signup">
+                 No tienes cuenta? <a href="/pages/sign_up.html">Sign up</a>
+              </p>
+  
+              <a href="#" class="login__forgot">
+                 Olvidaste tu contraseña
+              </a>
+  
+              <button type="submit" class="login__button">Log In</button>
+           </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+     </div>
+        <!-----------------End Header------------------>
+         
+        <!-------Home------>
+     <main class="l-main">
+        
+        <section class="home" id="home">
+            <div class="home__conteiner bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">Ropa casual <br> para tu <br> bebé</h1>
+                    <a href="/pages/productos.html" class="button">Ver Colección</a>
+                    <img src="imagenes/mamarrachitos.jpg" alt="mamarrachitos_img_home" class="img__home">
+                </div>
+            </div>
+        </section>
+        
+        <div class="collection__container__main">
+        
+         <section class="collection section">
+         <div class="collection__container bd-grid">
+            <div class="collection__box">
+               <img src="/imagenes/IMG_20220810_213602_646.jpg" alt="conjuntopusheen" class="collection__img">
+               
+               <div class="collection__data">
+                  <h2 class="collection__title"><span class="collection__subtitle">Mamarrachitas</span></h2>
+                  <a href="#" class="collection__view">Ver Colección</a>
+               </div>
+            </div>
+         </div>
+        </section>
+
+        <section class="collection section">
+         <div class="collection__container bd-grid">
+            <div class="collection__box">
+               <img src="/imagenes/IMG-20240317-WA0110.jpg" alt="conjuntoblueyandbingo" class="collection__img__2">   
+               <div class="collection__data">               
+                  <h2 class="collection__title"><span class="collection__subtitle">Mamarrachitos</span></h2>
+                  <a href="#" class="collection__view">Ver Colección</a>
+               </div>
+            </div>
+         </div>
+        </section>
+      </div>
+
+      <section class="table">
+         <h2 class="title__table">Tabla de talles</h2>
+        <table class="table__mamarrachitos">
+            <tr>
+            <th>Edad (meses)</th>
+            <th>Talla</th>
+            <th>Peso aproximado (kg)</th>
+            <th>Altura aproximada (cm)</th>
+            </tr>
+            <tr>
+            <td>0-3</td>
+            <td>RN (Recién Nacido)</td>
+            <td>2.5 - 4</td>
+            <td>43 - 51</td>
+            </tr>
+            <tr>
+            <td>3-6</td>
+            <td>0-3 meses</td>
+            <td>4 - 6</td>
+            <td>52 - 62</td>
+            </tr>
+            <tr>
+            <td>6-9</td>
+            <td>3-6 meses</td>
+            <td>6 - 8</td>
+            <td>63 - 69</td>
+            </tr>
+            <tr>
+                <td>9-12</td>
+                <td>6-9 meses</td>
+                <td>8 - 9</td>
+                <td>69 - 72</td>
+            </tr>
+            <tr>
+                <td>12-18</td>
+                <td>9-12 meses</td>
+                <td>9 - 10</td>
+                <td>73 - 76</td>
+            </tr>
+            <tr>
+                <td>18-24</td>
+                <td>12-18 meses</td>
+                <td>10 - 11</td>
+                <td>77 - 82</td>
+            </tr><tr>
+                <td>24</td>
+                <td>24 meses</td>
+                <td>11 - 12</td>
+                <td>83 - 89</td>
+            </tr>
+        </table>
+        <p class="description__measures">Estas medidas son aproximadas. Cada bebé crece a un ritmo diferente.</p>
+    </div>
+      </section>
+
+
+      <footer class="piePagina">
+
+         <a href="index.html"><img class="imagenlogofooter" src="/imagenes/mamarrachitos.jpg" alt="Logo Mamarrachitos"></a>
+         
+         <div class="seccion-derecha">
+         <p class="redesSociales">
+             <a href="https://www.instagram.com/mamarrachitos_ok"><i class="redes fi fi-brands-instagram"></i></a>
+         </p>
+         </div>
+   
+         <div class="seccion-izquierda">  
+         <ul>
+             <li class="liPaginasFooter"> <a class="linkFooter" href="index.html">Inicio</a> </li>
+             <li class="liPaginasFooter"> <a class="linkFooter" href="/pages/productos.html">Productos</a> </li>
+             <li class="liPaginasFooter"> <a class="linkFooter" href="/pages/preguntas.html">Preguntas</a> </li>
+         </ul>
+         </div>
+   
+       </footer> 
+<!---------------- JS ----------------->
+    <script src="js/navbar.js"></script>
+      </main>
+</body>
+</html>

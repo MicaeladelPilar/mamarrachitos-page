@@ -1,0 +1,92 @@
+:root {
+--back-ground-color-main:#f9f5e0;
+--h1-main-title: #8acdd7;
+--color-btn-main:#ff90bc;
+--color-btn-both:#91d0d8;
+--color-font-mamarrachitas:#e175a1;
+--color-font-mamarrachitos:#91d0d8;
+--color-table:#8acdd7;
+--color-font-table:#e175a1;
+
+    --altura_footer: 150px;
+
+    --padding_elementos: 20px;
+
+    --altura_sidebar_active: 10rem;
+}
+
+
+.contenedor_pagina {
+    position: relative;
+    min-height: calc(100vh - var(--altura_footer));
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.piePagina{
+    background-color: var(--color-font-mamarrachitas);
+    height: var(--altura_footer);
+    position: static;
+    bottom: 0;
+    line-height: 1; 
+
+}
+
+
+.piePagina a {
+    text-decoration: none;
+}
+
+.imagenlogofooter{
+    height: var(--altura_footer);
+    padding: 10px;
+    float: left;
+    border-radius: 50%;
+}
+.seccion-derecha {
+    text-align: right; 
+    padding: 1em;
+
+}
+.redesSociales {
+    margin-bottom: 0;
+}
+
+.redesSociales a {
+    color: var(--back-ground-color-main); 
+    font-size: 20px;
+    padding: 0.3em;
+    display: inline-flex; 
+}
+.redes:hover {
+    color: #fdd4e6; 
+}
+.seccion-izquierda {
+    text-align: right; 
+    margin-right: 1em;
+}
+.liPaginasFooter{
+    display: inline-flex;
+}
+.linkFooter{
+    color: var(--back-ground-color-main);    
+    font-weight: normal;
+    font-size: 1em;
+    margin-right: 10px;
+}
+.linkFooter:hover{
+    color: #fdd4e6;
+}
+
+
+@media (max-width: 480px) {
+    .seccion-izquierda {
+        display: none;
+    }
+
+    .derechos {
+        font-size: 0.5em;
+    }
+}
