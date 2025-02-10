@@ -1,0 +1,24 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+--header-height: 3.5rem;
+
+/*========== Colores ==========*/
+--back-ground-color-main:#f9f5e0;
+--h1-main-title: #8acdd7;
+--color-btn-main:#ff90bc;
+--color-btn-both:#91d0d8;
+--color-font-mamarrachitas:#e175a1;
+--color-font-mamarrachitos:#91d0d8;
+--color-table:#8acdd7;
+--color-font-table:#e175a1;
+
+/*========== Font y Tipografia ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+}
+
+
+
+
