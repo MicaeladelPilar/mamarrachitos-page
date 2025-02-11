@@ -18,7 +18,229 @@
 /*========== Font y Tipografia ==========*/
 /*.5rem = 8px | 1rem = 16px ...*/
 }
+/*=============== ESTILOS GENERALES ===============*/
+* body {
+    font-family: 'Syne', sans-serif;
+    background-color: var(--back-ground-color-main);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
 
 
 
+.main-content {
+    flex: 1; /* Ocupa el espacio restante entre el header y el footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
 
+
+/*=============== ESTILOS PARA PREGUNTAS FRECUENTES ===============*/
+.main_conteiner {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--back-ground-color-main);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--color-btn-main);
+    margin: auto; /* Esto lo centra horizontalmente */
+    margin-bottom: 1rem;
+}
+
+
+.preguntas_title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--h1-main-title);
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.q&a {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--color-font-mamarrachitos);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--color-btn-both);
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.q&a:hover {
+    background-color: var(--color-btn-main);
+    color: var(--back-ground-color-main);
+    cursor: pointer;
+}
+
+.main_conteiner p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-font-mamarrachitas);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 144, 188, 0.1);
+    border-radius: 5px;
+}
+
+/*=============== MEDIA QUERIES PARA RESPONSIVE ===============*/
+@media (max-width: 768px) {
+    .preguntas_title {
+        font-size: 2.5rem;
+    }
+
+    .q&a {
+        font-size: 1.5rem;
+    }
+
+    .main_conteiner p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .preguntas_title {
+        font-size: 2rem;
+    }
+
+    .q&a {
+        font-size: 1.25rem;
+    }
+
+    .main_conteiner p {
+        font-size: 0.9rem;
+    }
+
+    .main_conteiner {
+        padding: 1rem;
+    }
+}
+
+.contact-form-container {
+    background-color: var(--back-ground-color-main);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 2rem;
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--h1-main-title);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact-form .form-group {
+    flex: 1 1 calc(50% - 0.75rem);
+    margin-bottom: 1.5rem;
+}
+
+.contact-form .form-group.full-width {
+    flex: 1 1 100%;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-font-mamarrachitos);
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--color-btn-main);
+    border-radius: 5px;
+    background-color: white;
+    color: var(--color-font-mamarrachitas);
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--color-btn-both);
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--color-btn-main);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--color-btn-both);
+}
+
+/*=============== MEDIA QUERIES PARA RESPONSIVE ===============*/
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 1.75rem;
+    }
+
+    .contact-form .form-group {
+        flex: 1 1 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.8rem;
+    }
+
+    .submit-btn {
+        font-size: 0.8rem;
+    }
+} 
