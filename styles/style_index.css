@@ -34,19 +34,20 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 2rem; /* Añade padding para mejor visualización en móviles */
 }
 
 .home__data {
   display: flex;
   flex-wrap: wrap;
-  align-items: center; /* Alinea verticalmente */
-  justify-content: space-between; /* Distribuye el espacio entre elementos */
+  align-items: center;
+  justify-content: space-between;
   gap: 2rem;
   width: 100%;
 }
 
 .home__content {
-  flex: 1; /* El contenido (título y botón) ocupa el espacio disponible */
+  flex: 1;
 }
 
 .home__title {
@@ -57,12 +58,11 @@
   margin-left: 2rem;
 }
 
-
 .img__home {
-  max-width: 30rem;
+  max-width: 20rem;
   border-radius: 50%;
   box-shadow: 2px 2px 4.5px var(--color-font-mamarrachitos);
-  margin-left: 22rem;
+  margin-left: 15rem;
 }
 
 .button {
@@ -76,24 +76,59 @@
   text-align: center;
   border-radius: 5px;
   width: auto;
-  margin-left: 5rem;
+  margin-left: 2rem; 
 }
 
 .button:hover {
   background-color: var(--color-font-mamarrachitas);
 }
 
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
+/* Media Queries para Responsive Design */
+
+@media (max-width: 1200px) {
+  .img__home {
+      margin-left: 25rem; 
+  }
+  .home__title{
+      font-size: 3rem; 
+  }
+  
+}
+
+@media (max-width: 992px) { 
+  .img__home {
+      margin-left: 5rem; 
+      max-width: 18rem; 
+  }
+  .home__title{
+      font-size: 2.5rem; 
+  }
+}
+
+@media (max-width: 768px) { 
   .home__data {
       flex-direction: column;
-      align-items: center; /* Centra horizontalmente */
+      align-items: center;
       text-align: center;
   }
 
-  .home__image {
-      order: 1; /* La imagen se muestra debajo del botón */
+  .img__home {
+      order: 1;
       margin-top: 2rem;
+      margin-left: 0; /* Elimina el margen en móviles */
+      max-width: 15rem; /* Tamaño de imagen para móviles */
+  }
+  .button {
+      margin-left: 0; /* Elimina el margen en móviles */
+  }
+  .home__title{
+      font-size: 2rem; /* Ajusta el tamaño del titulo */
+  }
+}
+
+@media (max-width: 576px) { /* Ejemplo: Móviles pequeños */
+  .home__title {
+      font-size: 1.8rem; /* Ajusta el tamaño del titulo para moviles pequeños */
   }
 }
 /*-----Colección-----*/
