@@ -21,55 +21,81 @@
 
 /*-----Home-----*/
 
-.home{
-    background-color: var(--back-ground-color-main);
-    display: flex;
-    box-shadow: 4px 4px 4.5px #f5ccdd 
+/* Estilos base */
+.home {
+  background-color: var(--back-ground-color-main);
+  display: flex;
+  box-shadow: 4px 4px 4.5px #f5ccdd;
 }
 
-.home__conteiner{
-    min-height: calc(100vh - 3.5rem);
+.home__conteiner {
+  min-height: calc(100vh - 3.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.home__data{
-    padding-top: 6rem;
+.home__data {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Alinea verticalmente */
+  justify-content: space-between; /* Distribuye el espacio entre elementos */
+  gap: 2rem;
+  width: 100%;
 }
 
-.home__title{
-    align-self: center;
-    font-size: 3.8rem;
-    line-height: 1;
-    letter-spacing: .5rem;
-    margin-bottom: 4rem; 
-    margin-left: 1rem;   
+.home__content {
+  flex: 1; /* El contenido (título y botón) ocupa el espacio disponible */
 }
 
-.img__home{
-    position:absolute;
-    right: 3rem;
-    bottom: 0;
-    max-width: 20rem; 
-    border-radius: 50%;
-    box-shadow: 2px 2px 4.5px var(--color-font-mamarrachitos);
+.home__title {
+  font-size: 3.8rem;
+  line-height: 1;
+  letter-spacing: 0.5rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
 }
 
-/*BTN*/ 
 
-.button{
-    display: inline-block;
-    background-color: var(--color-btn-main);
-    color:var(--back-ground-color-main);
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: .3s;
-    margin-left: 10rem;
+.img__home {
+  max-width: 30rem;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4.5px var(--color-font-mamarrachitos);
+  margin-left: 22rem;
 }
 
-.button:hover{
-    background-color: var(--color-font-mamarrachitas);
+.button {
+  display: inline-block;
+  background-color: var(--color-btn-main);
+  color: var(--back-ground-color-main);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 5px;
+  width: auto;
+  margin-left: 5rem;
 }
 
+.button:hover {
+  background-color: var(--color-font-mamarrachitas);
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .home__data {
+      flex-direction: column;
+      align-items: center; /* Centra horizontalmente */
+      text-align: center;
+  }
+
+  .home__image {
+      order: 1; /* La imagen se muestra debajo del botón */
+      margin-top: 2rem;
+  }
+}
 /*-----Colección-----*/
 .collection__container__main{
     display: flex;
