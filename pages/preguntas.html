@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/style_index.css">
     <link rel="stylesheet" href="/styles/style_footer.css">
     <link rel="stylesheet" href="/styles/style_preguntas.css">
+    <link rel="stylesheet" href="/styles/style_shopping_cart.css">
 
     <link rel="shortcut icon" href="/imagenes/mamarrachitos.jpg" type="image/x-icon">
     
@@ -47,7 +48,7 @@
          <div class="nav__actions">
             <i class="ri-search-line nav__search" id="search-btn"></i>
             <i class="ri-user-line nav__login" id="login-btn"></i>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-heart" id="carrito-btn" viewBox="0 0 16 16">
                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
             </svg>
          </div>
@@ -97,6 +98,17 @@
         <i class="ri-close-line login__close" id="login-close"></i>
      </div>
         <!-----------------End Header------------------>
+
+        <!-- Modal del Carrito -->
+      <div class="carrito-modal" id="carrito-modal">
+         <div class="carrito-contenido">
+             <h2>Carrito de Compras</h2>
+             <ul id="carrito"></ul>
+             <p>Total: $<span id="total">0.00</span></p>
+             <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+             <i class="ri-close-line carrito-cerrar" id="carrito-cerrar"></i>
+         </div>
+     </div>
       
    <h1 class="preguntas_title">Preguntas Frecuentes </h1>
       <div class="main_conteiner">
@@ -154,7 +166,8 @@
         </ul>
         </div>
 <!---------------- JS ----------------->
-    <script src="/js/navbar.js"></script>  
+   <script src="/js/navbar.js"></script>  
+   <script src="/js/shopping_cart.js"></script>
       </footer> 
 </body>
 </html>

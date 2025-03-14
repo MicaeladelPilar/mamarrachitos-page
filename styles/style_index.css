@@ -59,10 +59,10 @@
 }
 
 .img__home {
-  max-width: 20rem;
+  max-width: 30rem;
   border-radius: 50%;
   box-shadow: 2px 2px 4.5px var(--color-font-mamarrachitos);
-  margin-left: 15rem;
+  margin-left: 17rem;
 }
 
 .button {

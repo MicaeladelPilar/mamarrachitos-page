@@ -188,7 +188,19 @@ a {
   color: var(--first-color);
 }
 
+.nav__toggle {
+  background-color: var(--body-color); /* Mismo fondo que el header */
+  padding: 0.5rem; /* Añade espacio alrededor del ícono */
+  border-radius: 0.5rem; /* Suaviza los bordes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.nav__toggle i {
+  color: var(--title-color); /* Asegura que el ícono sea visible */
+  font-size: 1.5rem;
+}
 
 /* Navegacion para mobile devices */
 @media screen and (max-width: 1023px) {
