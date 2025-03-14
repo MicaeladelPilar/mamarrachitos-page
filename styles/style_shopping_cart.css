@@ -1,3 +1,48 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+--header-height: 3.5rem;
+
+/*========== Colores ==========*/
+--back-ground-color-main:#f9f5e0;
+--h1-main-title: #8acdd7;
+--color-btn-main:#ff90bc;
+--color-btn-both:#91d0d8;
+--color-font-mamarrachitas:#e175a1;
+--color-font-mamarrachitos:#91d0d8;
+--color-table:#8acdd7;
+--color-font-table:#e175a1;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-normal: 1;
+  --z-modal: 1000;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+  }
+}
+
 /* Estilos para el modal del carrito */
 .carrito-modal {
     position: fixed;
@@ -19,6 +64,7 @@
     width: 90%;
     max-width: 400px;
     position: relative;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .carrito-cerrar {
@@ -37,6 +83,7 @@
 #carrito {
     list-style: none;
     padding: 0;
+    margin: 1rem 0;
 }
 
 #carrito li {
@@ -58,4 +105,50 @@
 
 #carrito button:hover {
     background-color: var(--first-color-alt);
+}
+
+/* Estilos para el total */
+#total {
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+/* Estilos para los botones del carrito */
+.carrito-contenido button {
+    background-color: var(--color-font-mamarrachitas);
+    color: var(--title-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: var(--normal-font-size);
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: var(--font-semi-bold);
+}
+
+.carrito-contenido button:hover {
+    background-color: var(--first-color-alt);
+    transform: scale(1.05);
+}
+
+/* Estilos específicos para el botón de "Vaciar Carrito" */
+.carrito-contenido button:first-child {
+    background-color: var(--color-font-mamarrachitas);
+    color: var(--back-ground-color-main);
+}
+
+.carrito-contenido button:first-child:hover {
+    background-color: #d9534f;
+}
+
+/* Estilos específicos para el botón de "Finalizar Compra" */
+.carrito-contenido button:last-child {
+    background-color: var(--color-font-table);
+    color: var(--back-ground-color-main);
+}
+
+.carrito-contenido button:last-child:hover {
+    background-color: var(--color-font-mamarrachitas);
 }
